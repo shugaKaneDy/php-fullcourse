@@ -33,7 +33,25 @@
   // Object type
     // $object = new Car();
 
-  
+  // Built in Super Global
+    // echo $_SERVER["DOCUMENT_ROOT"];
+    // echo "<br>";
+    // echo $_SERVER["PHP_SELF"];
+    // echo "<br>";
+    // echo $_SERVER["SERVER_NAME"];
+    // echo "<br>";
+    // echo $_SERVER["REQUEST_METHOD"];
+
+    // echo $_GET["name"];
+    // echo $_GET["eyeColor"];
+
+    // echo $_REQUEST["name"];
+    // echo $_FILES["name"];
+    // echo $_COOKIE["name"];
+    // $_SESSION["username"] = "kane";
+    // echo $_SESSION["username"];
+
+    // $_ENV[];
   ?>
 
 </body>
