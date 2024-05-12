@@ -14,7 +14,27 @@
 
   <!-- Syntax -->
   <?php if(true) {?>
-    <p>Some HTML text</p>
+    <!-- <p>Some HTML text</p> -->
   <?php } ?>
+
+  <?php
+  // Scaler types
+  // default values
+    // $string = "";
+    // $int = 0;
+    // $float = 0;
+    // $bool = false;
+
+    // $array = [];
+    // $object = null;
+
+  // Array type
+    // $names = ["Kane", "Sherwin", "Ryan"];
+  // Object type
+    // $object = new Car();
+
+  
+  ?>
+
 </body>
 </html>
