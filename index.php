@@ -52,7 +52,29 @@
     // echo $_SESSION["username"];
 
     // $_ENV[];
+
+
   ?>
+  
+  <main>
+    <form action="includes/formhandler.php" method="post">
+      <label for="firstname">Firstname?</label>
+      <input type="text" id="firstname" name="firstname" placeholder="firstname...">
+
+      <label for="lastname">Lastname?</label>
+      <input type="text" id="lastname" name="lastname" placeholder="lastname...">
+      
+      <label for="favouritepet">Favourite pet?</label>
+      <select name="favouritepet" id="favouritepet">
+        <option value="none">None</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 
 </body>
 </html>
