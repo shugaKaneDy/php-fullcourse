@@ -121,6 +121,42 @@
     // $b = 2;
 
     // echo ++$a;
+
+    /* Control Structure
+    
+    $bool = true;
+    $a = "3";
+    $b = 4;
+
+    $result = match ($a) {
+      1, 3, 5 => "Variable a is equal to one!",
+      2 => "Variable a is equal to two!",
+      default => "None were a match"
+    };
+
+    echo $result;
+
+    switch ($a) {
+      case 1:
+        echo "The first case is correct!";
+        break;
+      case 2:
+        echo "The first case is correct!";
+        break;
+      default:
+        echo "None of the condition were true!";
+    }
+
+    if ($a <= $b && !$bool) {
+      echo "First condition is true!";
+    } else if ($a <= $b && $bool) {
+      echo "Second condition is true!";
+    } else {
+      echo "None of the condition were true!";
+    }
+    
+    */
+
   ?>
 
 </body>
