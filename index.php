@@ -7,7 +7,14 @@
 </head>
 <body>
   <?php
-    echo "Hello, World";
+  /* intro to php
+  echo "Hello, World";
+  */
   ?>
+
+  <!-- Syntax -->
+  <?php if(true) {?>
+    <p>Some HTML text</p>
+  <?php } ?>
 </body>
 </html>
