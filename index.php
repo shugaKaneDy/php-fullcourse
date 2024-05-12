@@ -56,7 +56,7 @@
 
   ?>
   
-  <main>
+  <!-- <main>
     <form action="includes/formhandler.php" method="post">
       <label for="firstname">Firstname?</label>
       <input type="text" id="firstname" name="firstname" placeholder="firstname...">
@@ -74,7 +74,54 @@
 
       <button type="submit">Submit</button>
     </form>
-  </main>
+  </main> -->
+
+  <?php
+    // String Operator
+    // $a = "Hello";
+    // $b = "World!";
+    // $c = $a. " " .$b;
+    // echo $c;
+
+    // Arithmetic Operators
+
+    // echo 1 - 2;
+
+    // Assignment Operators
+
+    // $a = 2;
+    // $a *= 4;
+
+    // echo $a;
+
+    // Comparison Operators
+
+    // $a = 4;
+    // $b = 4;
+
+    // if ($a != $b) {
+    //   echo "This statement is true!";
+    // }
+
+    // Logical Operator
+
+    // $a = 4;
+    // $b = 4;
+
+    // $c = 2;
+    // $d = 6;
+
+    // if ($a == $b || $c == $d) {
+    //   echo "This statement is true!";
+    // }
+
+    // Increment/Decrement Operators
+
+    // $a = 1;
+    // $b = 2;
+
+    // echo ++$a;
+  ?>
 
 </body>
 </html>
