@@ -157,7 +157,69 @@
     
     */
 
+    /* arrays
+    
+    // $fruits = [
+    //   "apple", 
+    //   "banana", 
+    //   "cherry",
+    // ];
+
+    // echo $fruits[0];
+    // $fruits[1] = "orange";
+
+    // unset($fruits[1]); makes it null
+    // array_splice($fruits, 0, 1); removes array
+
+
+    // echo $fruits[1];
+
+    // $tasks = [
+    //   "laundry" => "Daniel",
+    //   "trash" => "Frida",
+    //   "vacuum" => "Basse",
+    //   "dishes" => "Bella"
+    // ]; // key => value associative array
+
+    // print_r($tasks);
+    // echo count($tasks);
+    // sort($tasks); // returns index arrays when print
+    // print_r($tasks);
+
+    // array_push($fruits, "Mango"); // Only works on index arrays
+    // print_r($fruits);
+
+    // $fruits[] = "Mango";
+
+    // $tasks["dusting"] = "Tara";
+    
+    // print_r($tasks);
+
+    // $test = ["Mango", "Strawberry"];
+
+    // array_splice($fruits, 2, 0, $test); // For adding in between
+    // print_r($fruits);
+
+    // $food = [
+    //   array("apple", "mango"), 
+    //   "banana", 
+    //   "cherry",
+    // ];
+
+    // echo $food[1];
+
+    // $food = [
+    //   "fruits" => array("apple", "banana", "cherry"), 
+    //   "meat" => array("chicken", "fish", "sheep"), 
+    //   "vegetables" => array("cucumber", "carrot"), 
+    // ];
+
+    // echo $food["vegetables"][0];
+    */
+
+
   ?>
+
 
 </body>
 </html>
