@@ -216,7 +216,60 @@
 
     // echo $food["vegetables"][0];
     */
+    
+    /* Built in function
+    
+    */
 
+    // $string = "Hel lo, wor ld";
+
+    // echo strlen($string);
+    // echo strpos($string, "Wo");
+    // echo str_replace("world", "Kane", $string);
+    // echo strtolower($string);
+    // echo strtoupper($string);
+    // echo substr($string, 2, strlen($string));
+    // echo explode(" ", $string); // returns error
+    // print_r(explode(" ", $string));
+
+    // $number = -5.5;
+
+    // echo abs($number);
+    // echo round($number);
+    // echo pow(2,3);
+    // echo sqrt(16);
+    // echo rand(1, 100);
+
+    // $array1 = ["apple", "banana", "orange"];
+    // $array2 = ["kiwi"];
+
+    // echo count($array);
+    // echo is_array($array);
+    // array_push($array, "kiwi");
+    // print_r($array);
+
+    // array_pop($array);
+    // print_r($array);
+
+    // print_r(array_reverse($array));
+    // print_r(array_merge($array1, $array2));
+    // array_splice($array1, 2, 0, $array2);
+    // print_r($array1);
+
+    // echo date("Y-m-d H:i:s");
+
+    // $date = "2023-04-11 12:00:00";
+    // echo strtotime($date);
+    // $result = time() - strtotime($date);
+
+    // echo $result;
+    // echo time(); // use to get the difference between then and now
+
+    // date_default_timezone_set('Asia/Manila');
+    // $currentDateTime = date("Y-m-d H:i:s");
+
+    // echo $currentDateTime;
+    
 
   ?>
 
