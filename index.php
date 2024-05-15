@@ -1,3 +1,6 @@
+<?php
+  /* declare(strict_types=1); */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -219,8 +222,6 @@
     
     /* Built in function
     
-    */
-
     // $string = "Hel lo, wor ld";
 
     // echo strlen($string);
@@ -270,8 +271,62 @@
 
     // echo $currentDateTime;
     
+    // echo date('Y');
+    */
 
-  ?>
+    /* 
+    User function
+    
+      // function sayHello() {
+      //   // echo "Hello, World!";
+      //   return "Hello, World!";
+      // }
+
+      // $test = sayHello();
+      // echo $test;
+
+      // function sayHello($name) {
+      //   return "Hello, $name";
+      // }
+      
+      // $test = sayHello("Kane");
+      // echo $test;
+      
+      // function sayHello($name = "Gerickson") { 
+      //   return "Hello, $name";
+      // } // default value
+  
+      // $test = sayHello("Kane");
+      // echo $test;
+
+      // function sayHello(string $name) { 
+      //   return "Hello, $name!";
+      // }
+  
+      // $test = sayHello(123);
+      // echo $test;
+
+       function calculator(int $num1, int $num2) {
+        $result = $num1 + $num2;
+        return $result;
+      }
+
+      $test = calculator(2,5);
+      echo $test; 
+      // $test = "Kane";
+
+      // function calculator(int $num1, int $num2) {
+      //   // global $test;
+      //   $result = $num1 + $num2;
+      //   return $result;
+      // }
+
+      // $test = calculator(2,5);
+      // echo $test;
+    */
+    
+
+      ?>
 
 
 </body>
