@@ -376,7 +376,47 @@
   
       test();
     */
+    
 
+    /* 
+    Loops
+    
+    // $test = 5;
+
+    // for ($i = 1; $i <= $test; $i++) {
+    //   echo "This is iteration number: $i <br>";
+    // }
+
+    // $boolean = true;
+
+    // $test = 5;
+    // while ($test < 10) {
+    //   echo $test;  
+    //   $test++;
+    // }
+    // $test = 10;
+    // do {
+    //   echo $test;  
+    //   $test++;
+    // } while($test < 10);
+
+    // $fruits = ["Apple", "Banana", "Orange"];
+
+    // foreach($fruits as $fruit) {
+    //   echo "This is a $fruit <br>";
+    // }
+    // $fruits = ["Apple", "Banana", "Orange"];
+
+    // foreach($fruits as $index => $fruit) {
+    //   echo "This is a $fruit with an index of $index <br>";
+    // }
+    // $fruits = ["Apple" => "Red", "Banana" => "Yellow", "Orange" => "Orange"];
+
+    // foreach($fruits as $fruit => $color) {
+    //   echo "This is a $fruit that has a color of $color <br>";
+    // }
+    
+    */
 
 
     ?>
