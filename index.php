@@ -325,8 +325,41 @@
       // echo $test;
     */
     
+    /* 
+    Scopes
+    
+    $test = "test";
 
-      ?>
+    // function myFunction() {
+      // global $test;
+      // $localVar = "Hello, World!";
+
+      // return $localVar;
+      // return $GLOBALS["test"];
+
+      // Declare a static variable
+      // static $staticVar = 0;
+
+      // Increment
+      // $staticVar++;
+
+      // return $staticVar;
+    // }
+
+    // echo myFunction();
+    // echo myFunction();
+
+    class MyClass {
+      public $classVar = "Hello, World!";
+
+      public function myMethod() {
+        echo $this->classVar;
+      }
+    }
+    */
+
+
+    ?>
 
 
 </body>
