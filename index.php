@@ -358,6 +358,26 @@
     }
     */
 
+    /* 
+    Constants
+      -- Will automatically global
+    
+      define("PI", 3.14);
+      define("NAME", "KANE");
+      define("IS_ADMIN", true);
+  
+      echo PI;
+      echo NAME;
+      echo IS_ADMIN;
+  
+      function test() {
+        echo PI;
+      }
+  
+      test();
+    */
+
+
 
     ?>
 
