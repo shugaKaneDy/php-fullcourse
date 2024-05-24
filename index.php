@@ -439,6 +439,27 @@
       <button class="btn btn-primary">Signup</button>
     </form> -->
 
+    <div class="container mb-5">
+      <h3 class="text-center">Update Account</h3>
+
+      <form action="includes/userupdate.inc.php" method="post" class="w-50 m-auto mt-5">
+        <input class="form-control mb-2" type="text" name="username" placeholder="Username">
+        <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
+        <input class="form-control mb-2" type="text" name="email" placeholder="E-mail">
+        <button class="btn btn-primary">Signup</button>
+      </form>
+    </div>
+
+    <div class="container mb-5">
+      <h3 class="text-center">Delete Account</h3>
+
+      <form action="includes/userdelete.inc.php" method="post" class="w-50 m-auto mt-5">
+        <input class="form-control mb-2" type="text" name="username" placeholder="Username">
+        <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
+        <button class="btn btn-primary">Signup</button>
+      </form>
+    </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
