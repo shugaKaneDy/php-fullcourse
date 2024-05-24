@@ -11,6 +11,7 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
   <?php
@@ -439,6 +440,7 @@
       <button class="btn btn-primary">Signup</button>
     </form> -->
 
+    <!-- Update and Delete
     <div class="container mb-5">
       <h3 class="text-center">Update Account</h3>
 
@@ -458,7 +460,20 @@
         <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
         <button class="btn btn-primary">Signup</button>
       </form>
-    </div>
+    </div> -->
+
+    <!-- Select
+    <form class="w-50 mt-5 m-auto" action="search.php" method="post">
+      <label for="search" class="form-label"></label>
+      <div class="input-group">
+        <input id="search" name="usersearch" type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <button class="input-group-text" id="basic-addon2">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
+     -->
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
