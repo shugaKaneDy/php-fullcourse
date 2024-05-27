@@ -1,5 +1,19 @@
 <?php
   /* declare(strict_types=1); */
+
+  /* SESSION
+  
+  session_start();
+
+  $_SESSION["username"] = "Kane";
+
+  // unset($_SESSION["username"]); // single delete
+
+  // session_unset(); //deleting all
+
+  // session_destroy(); destroy session but only when you access other page
+  
+  */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -473,6 +487,14 @@
       </div>
     </form>
      -->
+
+    <?php
+      /* SESSION
+        echo $_SESSION["username"];
+      */
+    ?>
+
+      
 
 
 
