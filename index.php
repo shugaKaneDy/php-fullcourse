@@ -14,6 +14,8 @@
   // session_destroy(); destroy session but only when you access other page
   
   */
+
+  require_once 'config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -492,6 +494,9 @@
       /* SESSION
         echo $_SESSION["username"];
       */
+
+
+
     ?>
 
       
