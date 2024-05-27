@@ -20,8 +20,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // name parameters
     $query = "INSERT INTO users (username, pwd, email) VALUES (:username, :pwd, :email);";
     $stmt = $pdo->prepare($query);
+    
+    $options = [
+      'cost' => 12
+    ];
+
+    $hashPwd = password_hash($pwd, PASSWORD_BCRYPT, $options);
+
     $stmt->bindParam(":username", $username);
-    $stmt->bindParam(":pwd", $pwd);
+    $stmt->bindParam(":pwd", $hashPwd);
     $stmt->bindParam(":email", $email);
 
     $stmt->execute();

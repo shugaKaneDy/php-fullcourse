@@ -499,6 +499,15 @@
 
     ?>
 
+    <!-- <h3 class="text-center">Signup</h3>
+
+    <form action="includes/formhandler.inc.php" method="post" class="w-50 m-auto mt-5">
+      <input class="form-control mb-2" type="text" name="username" placeholder="Username">
+      <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
+      <input class="form-control mb-2" type="text" name="email" placeholder="E-mail">
+      <button class="btn btn-primary">Signup</button>
+    </form> -->
+
       
 
 
