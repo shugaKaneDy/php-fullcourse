@@ -1,6 +1,7 @@
 <?php
 require_once 'includes/config_session.inc.php';
 require_once 'includes/signup_view.inc.php';
+require_once 'includes/login_view.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,15 +17,31 @@ require_once 'includes/signup_view.inc.php';
 </head>
 <body>
 
-  <div class="container">
-    <h3 class="text-center">Login</h3>
+  <h3 class="text-center">
+    <?php
+      output_username();
+    ?>
+  </h3>
 
-    <form action="includes/login.inc.php" method="post" class="w-50 m-auto mt-5">
-      <input class="form-control mb-2" type="text" name="username" placeholder="Username">
-      <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
-      <button class="btn btn-primary">Login</button>
-    </form> 
-  </div>
+  <?php
+    if(!isset($_SESSION["user_id"])) { ?>
+      <div class="container">
+        <h3 class="text-center">Login</h3>
+
+        <form action="includes/login.inc.php" method="post" class="w-50 m-auto mt-5">
+          <input class="form-control mb-2" type="text" name="username" placeholder="Username">
+          <input class="form-control mb-2" type="password" name="pwd" placeholder="Password">
+          <button class="btn btn-primary">Login</button>
+        </form> 
+
+        
+      </div>
+  <?php  } ?>
+  
+
+  <?php
+      check_login_errors();
+  ?>
 
   <div class="container mt-5">
     <h3 class="text-center">Sign-up</h3>
@@ -41,6 +58,14 @@ require_once 'includes/signup_view.inc.php';
     <?php
       check_signup_errors();
     ?>
+  </div>
+
+  <div class="container">
+    <h3 class="text-center">Logout</h3>
+
+    <form action="includes/logout.inc.php" method="post" class="w-50 m-auto mt-5">
+      <button class="btn btn-danger">Logout</button>
+    </form> 
   </div>
   
 
