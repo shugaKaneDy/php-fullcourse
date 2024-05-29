@@ -72,5 +72,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   }
 
+  if(isset($_POST["delete_student"])) {
+    $student_id = $_POST["delete_student"];
+
+    try {
+
+      $query = "DELETE FROM students WHERE id = :student_id";
+      $stmt = $conn->prepare($query);
+
+      $data = [':student_id' => $student_id];
+      $query_execute = $stmt->execute($data);
+
+      if($query_execute) {
+        $_SESSION['message'] = "Deleted Successfully";
+        header("location: pdo.php");
+        exit(0);
+      } else {
+        $_SESSION['message'] = "Not Deleted";
+        header("location: pdo.php");
+        exit(0);
+      }
+
+    } catch (PDOException $e) {
+      die("Connection Failed" . $e->getMessage());
+    }
+  }
+
 
 }

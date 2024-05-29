@@ -44,6 +44,7 @@
                     <th>Phone</th>
                     <th>Course</th>
                     <th>Edit</th>
+                    <th>Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -66,6 +67,11 @@
                             <td><?= $row->course; ?></td>
                             <td>
                               <a class="btn btn-warning" href="student-edit.php?id=<?= $row->id; ?>">Edit</a>
+                            </td>
+                            <td>
+                              <form action="code.php" method="POST">
+                                <button type="submit" name="delete_student" value="<?= $row->id; ?>" class="btn btn-danger">Delete</button>
+                              </form>
                             </td>
                           </tr>
                         <?php
