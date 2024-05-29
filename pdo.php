@@ -34,47 +34,53 @@
             </h3>
           </div>
           <div class="card-body">
-            <table class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Fullname</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                  <th>Course</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-                  $query = "SELECT * FROM students";
-                  $stmt = $conn->prepare($query);
-                  $stmt->execute();
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Edit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+                    $query = "SELECT * FROM students";
+                    $stmt = $conn->prepare($query);
+                    $stmt->execute();
 
-                  $stmt->setFetchMode(PDO::FETCH_OBJ); // PDO::FETCH_ASSOC
-                  $result = $stmt->fetchAll(); // PDO::FETCH_ASSOC
-                  if($result) {
+                    $stmt->setFetchMode(PDO::FETCH_OBJ); // PDO::FETCH_ASSOC
+                    $result = $stmt->fetchAll(); // PDO::FETCH_ASSOC
+                    if($result) {
 
-                    foreach($result as $row) {
+                      foreach($result as $row) {
+                        ?>
+                          <tr>
+                            <td><?= $row->id; ?></td>
+                            <td><?= $row->fullname; ?></td>
+                            <td><?= $row->email; ?></td>
+                            <td><?= $row->phone; ?></td>
+                            <td><?= $row->course; ?></td>
+                            <td>
+                              <a class="btn btn-warning" href="student-edit.php?id=<?= $row->id; ?>">Edit</a>
+                            </td>
+                          </tr>
+                        <?php
+                      }
+                    } else {
                       ?>
-                        <tr>
-                          <td><?= $row->id; ?></td>
-                          <td><?= $row->fullname; ?></td>
-                          <td><?= $row->email; ?></td>
-                          <td><?= $row->phone; ?></td>
-                          <td><?= $row->course; ?></td>
-                        </tr>
+                      <tr>
+                        <td colspan="5">No record found</td>
+                      </tr>
                       <?php
                     }
-                  } else {
-                    ?>
-                    <tr>
-                      <td colspan="5">No record found</td>
-                    </tr>
-                    <?php
-                  }
-                ?>
-              </tbody>
-            </table>
+                  ?>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
